@@ -77,14 +77,14 @@ class Controller_Admin_Seo extends Controller_Admin {
 		$post = $this->request->post();
 		$data = $post['data'];
 
-		foreach($data AS $datum)
+		foreach ($data AS $datum)
 		{
 			// Get page
 			$page = ORM::factory('Page')
 				->where('pagename', '=', $datum[0])
 			    ->find();
 			
-			if( ! $page->loaded())
+			if ( ! $page->loaded())
 			{
 				// New entry
 				$page = ORM::factory('Page');
