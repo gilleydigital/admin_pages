@@ -1,5 +1,5 @@
 <div class="formaid">
 	<?php echo View::factory('formaid/messages') ?>
 	<div class="spreadsheet"></div>
-	<?php echo Form::submit(NULL, 'Save', array('class' => 'formfield-submit')) ?>
+	<?php echo Form::submit(NULL, 'Save', array('class' => 'formfield-submit', 'id' => 'seo-submit')) ?>
 </div>

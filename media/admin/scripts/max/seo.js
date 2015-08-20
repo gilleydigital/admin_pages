@@ -39,7 +39,7 @@ $.ajax({
 });
 
 // Save to database
-$('.submit').click(function () {
+$('#seo-submit').click(function () {
 	$.ajax({
 		url: kohana_base_url + "seo/save",
 		data: {"data": handsontable.getData()}, // returns all cells' data
